@@ -1,0 +1,40 @@
+.card-blanca{
+    width: 400px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px 30px;
+}
+p{
+    margin-bottom: 5px;
+    color: var(--dark-grayish-cyan);
+    font-weight: 600;
+}
+input{
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    text-align: end;
+    font-size: 18px;
+    background-color: var(--Very-light-grayish-cyan);
+}
+.bill, .tip, .number{
+    margin-bottom: 20px;
+}
+button{
+    background-color: var(--Very-dark-cyan);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--White);
+    border: none;
+    margin: 0 10px 10px;
+    width: 90px;
+    padding: 15px;
+    border-radius: 5px;
+}
+#custom{
+    margin-left: 15px;
+    width: 25%;
+}
