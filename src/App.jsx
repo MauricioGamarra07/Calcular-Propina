@@ -7,7 +7,6 @@ function App() {
 
   const [dinero, setDinero] = useState(0);
   const [personas, setPersonas] = useState(0);
-  const [custom, setCustom] = useState(0);
 
   const [propina, setPropina] = useState(0);
   const [total, setTotal] = useState(0);
@@ -20,22 +19,14 @@ function App() {
     setPersonas(personas)
   }, [])
 
-  useEffect(() => {
-    setCustom(custom);
-  }, [])
-
   function resetearInfo() {
     setPropina(0);
     setTotal(0);
   }
 
-  const calcularTotal = (e) => {
+  const calcularTotal = (porcen) => {
 
-    let id = e.target.id;
-
-    let porce = parseInt(id) / 100;
-    /* console.log("Porcentaje es: " + porce); */
-    let propina = porce * parseInt(dinero);
+    let propina = porcen * parseInt(dinero);
     /* console.log("Propina es: " + propina); */
     let total = parseInt(dinero) + propina;
     /* console.log("El Total es: " + total); */

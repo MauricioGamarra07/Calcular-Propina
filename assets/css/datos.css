@@ -23,7 +23,7 @@ input{
 .bill, .tip, .number{
     margin-bottom: 20px;
 }
-button{
+.percent{
     background-color: var(--Very-dark-cyan);
     font-size: 18px;
     font-weight: 700;
@@ -33,6 +33,9 @@ button{
     width: 90px;
     padding: 15px;
     border-radius: 5px;
+}
+.percent:hover{
+    background-color: var(--Strong-cyan);
 }
 #custom{
     margin-left: 15px;
