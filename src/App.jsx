@@ -40,8 +40,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>SPLI</h1>
-      <h1>TTER</h1>
+      <div className="titulo">
+        <h1>SPLI</h1>
+        <h1>TTER</h1>
+      </div>
       <div className="card">
         <Datos calcularTotal={calcularTotal} setDinero={setDinero} setPersonas={setPersonas} />
         <Detalle total={total} tip={propina} resetearInfo={resetearInfo} />
